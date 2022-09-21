@@ -14,6 +14,8 @@ class PlayActivity : AppCompatActivity() {
     companion object{
         var question=ArrayList<String>()
         var answer=ArrayList<String>()
+        var sound=ArrayList<Int>()
+        var image=ArrayList<Int>()
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -44,16 +46,61 @@ class PlayActivity : AppCompatActivity() {
         list=list+Item("Qo'shib ayirishni takrorlash",R.drawable.a)
 
 
-
         var adapter=Adapter(list=list,this@PlayActivity)
         binding.grid.adapter=adapter
 
         binding.grid.onItemClickListener=AdapterView.OnItemClickListener{ adapterView: AdapterView<*>, view2: View, i: Int, l: Long ->
             when(i){
                 0->{
+                    question.clear()
+                    question.add("Qaysi son katta?")
+                    question.add("Qaysi son katta?")
+                    question.add("Qaysi son kichik?")
+                    question.add("Qaysi son kichik?")
+                    question.add("Qaysi sonlar o'zaro teng")
+                    question.add("Qaysi sonlar o'zaro teng")
+                    question.add("Eng katta sonni toping?")
+                    question.add("Eng kichik sonni toping")
+                    question.add("Qaysi sonlar o'zaro teng")
+                    question.add("Qaysi sonlar o'zaro teng")
+
+                    answer.clear()
+                    answer.add("6")
+                    answer.add("4")
+                    answer.add("7")
+                    answer.add("3")
+                    answer.add("7")
+                    answer.add("9")
+                    answer.add("10")
+                    answer.add("0")
+                    answer.add("5")
+                    answer.add("2")
 
                 }
                 1->{
+                    question.clear()
+                    question.add("1 dan keyin qaysi son keladi?")
+                    question.add("4 dan keyin qaysi son keladi?")
+                    question.add("5 dan oldin qaysi son keladi?")
+                    question.add("9 dan oldin qaysi son keladi?")
+                    question.add("Qaysi sonlar o'zaro teng")
+                    question.add("Qaysi sonlar o'zaro teng")
+                    question.add("Eng katta sonni toping?")
+                    question.add("Eng kichik sonni toping")
+                    question.add("Qaysi sonlar o'zaro teng")
+                    question.add("Qaysi sonlar o'zaro teng")
+
+                    answer.clear()
+                    answer.add("6")
+                    answer.add("4")
+                    answer.add("7")
+                    answer.add("3")
+                    answer.add("7")
+                    answer.add("9")
+                    answer.add("10")
+                    answer.add("0")
+                    answer.add("5")
+                    answer.add("2")
 
                 }
                 2->{
