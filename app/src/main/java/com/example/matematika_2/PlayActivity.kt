@@ -104,6 +104,29 @@ class PlayActivity : AppCompatActivity() {
 
                 }
                 2->{
+                    question.clear()
+                    question.add("3+2=?")
+                    question.add("2+1=?")
+                    question.add("3+1=?")
+                    question.add("5-3=?")
+                    question.add("")
+                    question.add("Qaysi sonlar o'zaro teng")
+                    question.add("Eng katta sonni toping?")
+                    question.add("Eng kichik sonni toping")
+                    question.add("Qaysi sonlar o'zaro teng")
+                    question.add("Qaysi sonlar o'zaro teng")
+
+                    answer.clear()
+                    answer.add("6")
+                    answer.add("4")
+                    answer.add("7")
+                    answer.add("3")
+                    answer.add("7")
+                    answer.add("9")
+                    answer.add("10")
+                    answer.add("0")
+                    answer.add("5")
+                    answer.add("2")
 
                 }
                 3->{
