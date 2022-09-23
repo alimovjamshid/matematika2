@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.example.matematika_2.PlayActivity
 import com.example.matematika_2.R
 import com.example.matematika_2.databinding.FragmenrTwoBinding
 import com.example.matematika_2.dialog.RightDialog
@@ -32,15 +33,17 @@ class TwoFragment:Fragment() {
         val question:ArrayList<String> = bundle?.getStringArrayList("question") as ArrayList<String>
         val answer:ArrayList<String> =bundle?.getStringArrayList("answer") as ArrayList<String>
         val baa:ArrayList<String> =bundle?.getStringArrayList("baa") as ArrayList<String>
-        binding.question2.text=question[0]
-        binding.answer21.text=answer[0]
-        binding.answer22.text=baa[0]
+        binding.question2.text=question[i]
+        binding.answer21.text=answer[i]
+        binding.answer22.text=baa[i]
 
         val mfragment=ThreeFragment()
         val mbundle=Bundle()
-        mbundle.putStringArrayList("question",question)
-
+        mbundle.putStringArrayList("question", PlayActivity.question)
+        mbundle.putStringArrayList("answer", PlayActivity.answer)
+        mbundle.putStringArrayList("baa", PlayActivity.baa)
         mfragment.arguments=mbundle
+
 
         binding.answer21.setOnClickListener {
             when(i){
@@ -50,9 +53,9 @@ class TwoFragment:Fragment() {
                     BgMusic=MediaPlayer.create(context, R.raw.right)
                     BgMusic?.start()
                     rightDialog.show(requireFragmentManager(),"sdfghjkl")
-                    binding.question2.text=question[1]
-                    binding.answer21.text=baa[1]
-                    binding.answer22.text=answer[1]
+                    binding.question2.text=question[i]
+                    binding.answer21.text=baa[i]
+                    binding.answer22.text=answer[i]
                 }
                 2->{
                     t++
@@ -60,9 +63,9 @@ class TwoFragment:Fragment() {
                     BgMusic=MediaPlayer.create(context, R.raw.right)
                     BgMusic?.start()
                     rightDialog.show(requireFragmentManager(),"sdfghjkl")
-                    binding.question2.text=question[3]
-                    binding.answer21.text=baa[3]
-                    binding.answer22.text=answer[3]
+                    binding.question2.text=question[i]
+                    binding.answer21.text=baa[i]
+                    binding.answer22.text=answer[i]
                 }
                 else->{
                     f++
@@ -81,9 +84,9 @@ class TwoFragment:Fragment() {
                     BgMusic=MediaPlayer.create(context, R.raw.right)
                     BgMusic?.start()
                     rightDialog.show(requireFragmentManager(),"sdfghjkl")
-                    binding.question2.text=question[2]
-                    binding.answer21.text=answer[2]
-                    binding.answer22.text=baa[2]
+                    binding.question2.text=question[i]
+                    binding.answer21.text=answer[i]
+                    binding.answer22.text=baa[i]
                 }
                 3->{
                     t++

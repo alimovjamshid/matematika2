@@ -58,8 +58,8 @@ open class PlayActivity : AppCompatActivity() {
                     question.add("Qaysi son katta?")
                     question.add("Qaysi son kichik?")
                     question.add("Qaysi son kichik?")
-                    question.add("Qaysi sonlar o'zaro teng")
-                    question.add("Qaysi sonlar o'zaro teng")
+                    question.add("Qaysi son eng kattasi?")
+                    question.add("Qaysi son eng kichigi?")
                     question.add("Eng katta sonni toping?")
                     question.add("Eng kichik sonni toping?")
                     question.add("Eng kichik sonni belgilang")
@@ -71,7 +71,7 @@ open class PlayActivity : AppCompatActivity() {
                     answer.add("7")
                     answer.add("3")
                     answer.add("7")
-                    answer.add("9")
+                    answer.add("1")
                     answer.add("10")
                     answer.add("0")
                     answer.add("5")
@@ -87,10 +87,10 @@ open class PlayActivity : AppCompatActivity() {
                     baa.add("8")
 
                     baa.add("5")
-                    baa.add("7")//
+                    baa.add("2")
 
-                    baa.add("5")
-                    baa.add("9")//
+                    baa.add("8")
+                    baa.add("9")
 
                     baa.add("4")
                     baa.add("1")
