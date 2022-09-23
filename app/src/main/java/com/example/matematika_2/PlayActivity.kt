@@ -125,7 +125,7 @@ open class PlayActivity : AppCompatActivity() {
 
                     answer.clear()
                     answer.add("2")
-                    answer.add("3")
+                    answer.add("5")
                     answer.add("4")
                     answer.add("8")
                     answer.add("3")
@@ -138,16 +138,16 @@ open class PlayActivity : AppCompatActivity() {
                     baa.clear()
                     baa.add("4")
 
-                    baa.add("3")
+                    baa.add("2")
 
                     baa.add("9")
 
-                    baa.add("8")
-
                     baa.add("5")
+
+                    baa.add("8")
                     baa.add("2")
 
-                    baa.add("8")
+                    baa.add("2")
                     baa.add("9")
 
                     baa.add("4")
@@ -173,34 +173,224 @@ open class PlayActivity : AppCompatActivity() {
                     question.add("2+1=?")
                     question.add("3+1=?")
                     question.add("5-3=?")
-                    question.add("")
-                    question.add("Qaysi sonlar o'zaro teng")
-                    question.add("Eng katta sonni toping?")
-                    question.add("Eng kichik sonni toping")
-                    question.add("Qaysi sonlar o'zaro teng")
-                    question.add("Qaysi sonlar o'zaro teng")
+                    question.add("1+3=?")
+                    question.add("3+0=?")
+                    question.add("4+1=?")
+                    question.add("5-4=?")
+                    question.add("4-2=?")
+                    question.add("3-2=?")
 
                     answer.clear()
-                    answer.add("6")
-                    answer.add("4")
-                    answer.add("7")
-                    answer.add("3")
-                    answer.add("7")
-                    answer.add("9")
-                    answer.add("10")
-                    answer.add("0")
                     answer.add("5")
+                    answer.add("3")
+                    answer.add("4")
                     answer.add("2")
+                    answer.add("4")
+                    answer.add("3")
+                    answer.add("5")
+                    answer.add("1")
+                    answer.add("2")
+                    answer.add("1")
+
+                    baa.clear()
+                    baa.add("4")
+
+                    baa.add("2")
+
+                    baa.add("1")
+
+                    baa.add("5")
+
+                    baa.add("1")
+                    baa.add("2")
+
+                    baa.add("2")
+                    baa.add("0")
+
+                    baa.add("4")
+                    baa.add("3")
+                    baa.add("0")
+
+                    baa.add("4")
+                    baa.add("2")
+                    baa.add("3")
+
+                    baa.add("1")
+                    baa.add("0")
+                    baa.add("5")
+
+                    baa.add("4")
+                    baa.add("2")
+                    baa.add("5")
 
                 }
                 3->{
+                    question.clear()
+                    question.add("4+2=?")
+                    question.add("9+1=?")
+                    question.add("3+5=?")
+                    question.add("8-3=?")
+                    question.add("4+3=?")
+                    question.add("3+4=?")
+                    question.add("4+4=?")
+                    question.add("8-1=?")
+                    question.add("10-2=?")
+                    question.add("9-2=?")
 
+                    answer.clear()
+                    answer.add("6")
+                    answer.add("10")
+                    answer.add("8")
+                    answer.add("5")
+                    answer.add("7")
+                    answer.add("7")
+                    answer.add("8")
+                    answer.add("7")
+                    answer.add("8")
+                    answer.add("7")
+
+                    baa.clear()
+                    baa.add("4")
+
+                    baa.add("2")
+
+                    baa.add("1")
+
+                    baa.add("8")
+
+                    baa.add("1")
+                    baa.add("9")
+
+                    baa.add("8")
+                    baa.add("6")
+
+                    baa.add("7")
+                    baa.add("9")
+                    baa.add("10")
+
+                    baa.add("4")
+                    baa.add("8")
+                    baa.add("3")
+
+                    baa.add("1")
+                    baa.add("10")
+                    baa.add("3")
+
+                    baa.add("4")
+                    baa.add("2")
+                    baa.add("9")
                 }
                 4->{
+                    question.clear()
+                    question.add("O'n bir sonini ko'rsating")
+                    question.add("10+1=?")
+                    question.add("8+1=?")
+                    question.add("11-3=?")
+                    question.add("1+8=?")
+                    question.add("11+0=?")
+                    question.add("10-5=?")
+                    question.add("5+6=?")
+                    question.add("8+2=?")
+                    question.add("7+2=?")
 
+                    answer.clear()
+                    answer.add("11")
+                    answer.add("11")
+                    answer.add("9")
+                    answer.add("8")
+                    answer.add("9")
+                    answer.add("11")
+                    answer.add("5")
+                    answer.add("11")
+                    answer.add("10")
+                    answer.add("9")
+
+                    baa.clear()
+                    baa.add("9")
+
+                    baa.add("2")
+
+                    baa.add("7")
+
+                    baa.add("5")
+
+                    baa.add("7")
+                    baa.add("6")
+
+                    baa.add("7")
+                    baa.add("5")
+
+                    baa.add("4")
+                    baa.add("8")
+                    baa.add("0")
+
+                    baa.add("4")
+                    baa.add("9")
+                    baa.add("3")
+
+                    baa.add("1")
+                    baa.add("8")
+                    baa.add("5")
+
+                    baa.add("4")
+                    baa.add("2")
+                    baa.add("7")
                 }
                 5->{
+                    question.clear()
+                    question.add("O'n ikki sonini ko'rsating")
+                    question.add("10+2=?")
+                    question.add("8+2=?")
+                    question.add("12-3=?")
+                    question.add("1+10=?")
+                    question.add("11+1=?")
+                    question.add("12-5=?")
+                    question.add("5+7=?")
+                    question.add("8+2=?")
+                    question.add("7+2=?")
 
+                    answer.clear()
+                    answer.add("12")
+                    answer.add("12")
+                    answer.add("10")
+                    answer.add("9")
+                    answer.add("11")
+                    answer.add("12")
+                    answer.add("7")
+                    answer.add("12")
+                    answer.add("10")
+                    answer.add("9")
+
+                    baa.clear()
+                    baa.add("9")
+
+                    baa.add("11")
+
+                    baa.add("7")
+
+                    baa.add("5")
+
+                    baa.add("10")
+                    baa.add("6")
+
+                    baa.add("7")
+                    baa.add("5")
+
+                    baa.add("4")
+                    baa.add("8")
+                    baa.add("12")
+
+                    baa.add("11")
+                    baa.add("9")
+                    baa.add("3")
+
+                    baa.add("9")
+                    baa.add("8")
+                    baa.add("5")
+
+                    baa.add("4")
+                    baa.add("2")
+                    baa.add("7")
                 }
                 6->{
 
