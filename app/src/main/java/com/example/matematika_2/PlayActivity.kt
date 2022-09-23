@@ -8,12 +8,13 @@ import android.widget.AdapterView
 import android.widget.Toast
 import com.example.matematika_2.databinding.ActivityPlayBinding
 
-class PlayActivity : AppCompatActivity() {
+open class PlayActivity : AppCompatActivity() {
     private lateinit var binding: ActivityPlayBinding
     lateinit var list: List<Item>
     companion object{
         var question=ArrayList<String>()
         var answer=ArrayList<String>()
+        val baa=ArrayList<String>()
         var sound=ArrayList<Int>()
         var image=ArrayList<Int>()
     }
@@ -76,6 +77,26 @@ class PlayActivity : AppCompatActivity() {
                     answer.add("5")
                     answer.add("2")
 
+                    baa.clear()
+                    baa.add("4")
+
+                    baa.add("3")
+
+                    baa.add("9")
+
+                    baa.add("8")
+
+                    baa.add("5")
+                    baa.add("7")
+
+                    baa.add("5")
+                    baa.add("9")
+
+                    baa.add("4")
+                    baa.add("10")
+
+
+
                 }
                 1->{
                     question.clear()
@@ -83,8 +104,8 @@ class PlayActivity : AppCompatActivity() {
                     question.add("4 dan keyin qaysi son keladi?")
                     question.add("5 dan oldin qaysi son keladi?")
                     question.add("9 dan oldin qaysi son keladi?")
-                    question.add("Qaysi sonlar o'zaro teng")
-                    question.add("Qaysi sonlar o'zaro teng")
+                    question.add("4 sonining qo'shni sonlarini toping?")
+                    question.add("7 sonining qo'shni sonlarini toping?")
                     question.add("Eng katta sonni toping?")
                     question.add("Eng kichik sonni toping")
                     question.add("Qaysi sonlar o'zaro teng")
