@@ -61,9 +61,9 @@ open class PlayActivity : AppCompatActivity() {
                     question.add("Qaysi sonlar o'zaro teng")
                     question.add("Qaysi sonlar o'zaro teng")
                     question.add("Eng katta sonni toping?")
-                    question.add("Eng kichik sonni toping")
-                    question.add("Qaysi sonlar o'zaro teng")
-                    question.add("Qaysi sonlar o'zaro teng")
+                    question.add("Eng kichik sonni toping?")
+                    question.add("Eng kichik sonni belgilang")
+                    question.add("Eng katta sonni belgilang")
 
                     answer.clear()
                     answer.add("6")
@@ -75,7 +75,7 @@ open class PlayActivity : AppCompatActivity() {
                     answer.add("10")
                     answer.add("0")
                     answer.add("5")
-                    answer.add("2")
+                    answer.add("8")
 
                     baa.clear()
                     baa.add("4")
@@ -87,14 +87,26 @@ open class PlayActivity : AppCompatActivity() {
                     baa.add("8")
 
                     baa.add("5")
-                    baa.add("7")
+                    baa.add("7")//
 
                     baa.add("5")
-                    baa.add("9")
+                    baa.add("9")//
 
                     baa.add("4")
-                    baa.add("10")
+                    baa.add("1")
+                    baa.add("8")
 
+                    baa.add("7")
+                    baa.add("4")
+                    baa.add("9")
+
+                    baa.add("8")
+                    baa.add("10")
+                    baa.add("6")
+
+                    baa.add("4")
+                    baa.add("2")
+                    baa.add("5")
 
 
                 }

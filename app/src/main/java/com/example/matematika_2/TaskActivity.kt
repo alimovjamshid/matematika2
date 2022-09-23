@@ -15,6 +15,7 @@ class TaskActivity : PlayActivity(){
         val bundle=Bundle()
         bundle.putStringArrayList("question", question)
         bundle.putStringArrayList("answer", answer)
+        bundle.putStringArrayList("baa", baa)
         nFragment.arguments=bundle
         supportFragmentManager.beginTransaction().replace(R.id.fragment,nFragment).commit()
     }
