@@ -116,24 +116,55 @@ open class PlayActivity : AppCompatActivity() {
                     question.add("4 dan keyin qaysi son keladi?")
                     question.add("5 dan oldin qaysi son keladi?")
                     question.add("9 dan oldin qaysi son keladi?")
-                    question.add("4 sonining qo'shni sonlarini toping?")
-                    question.add("7 sonining qo'shni sonlarini toping?")
+                    question.add("4 sonining qo'shni sonini toping?")
+                    question.add("7 sonining qo'shni sonini toping?")
                     question.add("Eng katta sonni toping?")
                     question.add("Eng kichik sonni toping")
                     question.add("Qaysi sonlar o'zaro teng")
                     question.add("Qaysi sonlar o'zaro teng")
 
                     answer.clear()
-                    answer.add("6")
-                    answer.add("4")
-                    answer.add("7")
+                    answer.add("2")
                     answer.add("3")
-                    answer.add("7")
-                    answer.add("9")
+                    answer.add("4")
+                    answer.add("8")
+                    answer.add("3")
+                    answer.add("8")
                     answer.add("10")
                     answer.add("0")
                     answer.add("5")
                     answer.add("2")
+
+                    baa.clear()
+                    baa.add("4")
+
+                    baa.add("3")
+
+                    baa.add("9")
+
+                    baa.add("8")
+
+                    baa.add("5")
+                    baa.add("2")
+
+                    baa.add("8")
+                    baa.add("9")
+
+                    baa.add("4")
+                    baa.add("1")
+                    baa.add("8")
+
+                    baa.add("7")
+                    baa.add("4")
+                    baa.add("9")
+
+                    baa.add("8")
+                    baa.add("10")
+                    baa.add("6")
+
+                    baa.add("4")
+                    baa.add("2")
+                    baa.add("5")
 
                 }
                 2->{
