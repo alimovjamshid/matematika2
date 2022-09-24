@@ -2,6 +2,7 @@ package com.example.matematika_2
 
 import android.os.Bundle
 import com.example.matematika_2.databinding.ActivityTaskBinding
+import com.example.matematika_2.fragment.DaysFragment
 import com.example.matematika_2.fragment.ImageFragment
 import com.example.matematika_2.fragment.TwoFragment
 
@@ -14,6 +15,7 @@ class TaskActivity : PlayActivity(){
 
         val nFragment = TwoFragment()
         val mFragment = ImageFragment()
+        val kFragment = DaysFragment()
         val bundle = Bundle()
         bundle.putStringArrayList("question", question)
         bundle.putStringArrayList("answer", answer)
@@ -21,6 +23,7 @@ class TaskActivity : PlayActivity(){
         bundle.putIntegerArrayList("image", image)
         nFragment.arguments = bundle
         mFragment.arguments=bundle
+        kFragment.arguments=bundle
         if (j <= 13 || j == 20) {
             supportFragmentManager.beginTransaction().replace(R.id.fragment, nFragment).commit()
         }
@@ -29,7 +32,7 @@ class TaskActivity : PlayActivity(){
                 supportFragmentManager.beginTransaction().replace(R.id.fragment, mFragment).commit()
             }
             15->{
-                supportFragmentManager.beginTransaction().replace(R.id.fragment, mFragment).commit()
+                supportFragmentManager.beginTransaction().replace(R.id.fragment, kFragment).commit()
             }
             17->{
                 supportFragmentManager.beginTransaction().replace(R.id.fragment, mFragment).commit()

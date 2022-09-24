@@ -868,7 +868,36 @@ open class PlayActivity : AppCompatActivity() {
                 }
                 15 -> {
                     //hafta kunlari
+                    question.clear()
+                    question.add("Haftaning 1-kunini belgilang")
+                    question.add("Haftaning 5-kunini belgilang")
+                    question.add("Haftaning 2-kunini belgilang")
+                    question.add("Haftaning 4-kunini belgilang")
+                    question.add("Haftaning 7-kunini belgilang")
+                    question.add("Haftaning 3-kunini belgilang")
+                    question.add("Haftaning 6-kunini belgilang")
 
+                    answer.clear()
+                    answer.add("Dushanba")
+                    answer.add("Payshanba")
+
+                    answer.add("Juma")
+                    answer.add("Chorshanba")
+
+                    answer.add("Seshanba")
+                    answer.add("Yakshanba")
+
+                    answer.add("Payshanba")
+                    answer.add("Juma")
+
+                    answer.add("Yakshanba")
+                    answer.add("Shanba")
+
+                    answer.add("Chorshanba")
+                    answer.add("Dushanba")
+
+                    answer.add("Shanba")
+                    answer.add("Seshanba")
                 }
                 16 -> {
                     //ogirlik olchovi
