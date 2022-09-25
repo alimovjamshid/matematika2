@@ -6,9 +6,9 @@
 
     <Button
         android:id="@+id/answer2_1"
-        android:layout_width="@dimen/_110sdp"
+        android:layout_width="@dimen/_115sdp"
         android:layout_height="@dimen/_50sdp"
-        android:textSize="@dimen/_12sdp"
+        android:textSize="@dimen/_10sdp"
         android:text="Shanba"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -19,9 +19,9 @@
 
     <Button
         android:id="@+id/answer2_2"
-        android:layout_width="@dimen/_110sdp"
+        android:layout_width="@dimen/_115sdp"
         android:layout_height="@dimen/_50sdp"
-        android:textSize="@dimen/_12sdp"
+        android:textSize="@dimen/_10sdp"
         android:text="Yakshanba"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

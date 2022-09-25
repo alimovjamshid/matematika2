@@ -905,7 +905,28 @@ open class PlayActivity : AppCompatActivity() {
                 }
                 17 -> {
                     //geomtrik shakkllar
+                    question.clear()
+                    question.add("Qaysi biri aylana shakli?")
+                    question.add("Qaysi biri uchburchak shakli?")
+                    question.add("Qaysi biri tortburchak shakli?")
+                    question.add("Qaysi biri uchburchak shakli?")
+                    question.add("Qaysi biri tortburchak shakli?")
 
+                    image.clear()
+                    image.add(R.drawable.img_6)
+                    image.add(R.drawable.img_9)
+
+                    image.add(R.drawable.img_7)
+                    image.add(R.drawable.img_10)
+
+                    image.add(R.drawable.img_8)
+                    image.add(R.drawable.img_6)
+
+                    image.add(R.drawable.img_7)
+                    image.add(R.drawable.img_10)
+
+                    image.add(R.drawable.img_8)
+                    image.add(R.drawable.img_9)
                 }
                 18 -> {
                     //geometrik burchak

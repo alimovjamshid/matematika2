@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.DialogFragment
+import com.example.matematika_2.R
 import com.example.matematika_2.databinding.FragmentDaysBinding
 import com.example.matematika_2.dialog.RightDialog
 import com.example.matematika_2.dialog.WrongDialog
@@ -36,10 +37,52 @@ class DaysFragment:DialogFragment() {
         binding.answer21.text=answer[0]
         binding.answer22.text=answer[1]
 
+        val mfragment=MondatDialog()
+        val mbundle=Bundle()
+        mfragment.arguments=mbundle
+
         binding.answer21.setOnClickListener {
             when(i){
                 0->{
-
+                    i++
+                    t++
+                    BgMusic=MediaPlayer.create(context, R.raw.right)
+                    BgMusic?.start()
+                    rightDialog.show(requireFragmentManager(),"sdfghjkl")
+                    binding.question2.text=question[1]
+                    binding.answer22.text=answer[2]
+                    binding.answer21.text=answer[3]
+                }
+                2->{
+                    i++
+                    t++
+                    BgMusic=MediaPlayer.create(context, R.raw.right)
+                    BgMusic?.start()
+                    rightDialog.show(requireFragmentManager(),"sdfghjkl")
+                    binding.question2.text=question[3]
+                    binding.answer22.text=answer[6]
+                    binding.answer21.text=answer[7]
+                }
+                4->{
+                    i++
+                    t++
+                    BgMusic=MediaPlayer.create(context, R.raw.right)
+                    BgMusic?.start()
+                    rightDialog.show(requireFragmentManager(),"sdfghjkl")
+                    binding.question2.text=question[5]
+                    binding.answer22.text=answer[10]
+                    binding.answer21.text=answer[11]
+                }
+                6->{
+                    i++
+                    t++
+                    BgMusic=MediaPlayer.create(context, R.raw.right)
+                    BgMusic?.start()
+                    rightDialog.show(requireFragmentManager(),"sdfghjkl")
+                    mbundle.putInt("t",t)
+                    mbundle.putInt("f",f)
+                    dialog?.window?.setBackgroundDrawableResource(android.R.color.transparent)
+                    fragmentManager?.beginTransaction()?.add(R.id.fragment,mfragment)?.commit()
                 }
             }
         }
@@ -47,13 +90,34 @@ class DaysFragment:DialogFragment() {
         binding.answer22.setOnClickListener {
             when(i){
                 1->{
-
+                    i++
+                    t++
+                    BgMusic=MediaPlayer.create(context, R.raw.right)
+                    BgMusic?.start()
+                    rightDialog.show(requireFragmentManager(),"sdfghjkl")
+                    binding.question2.text=question[2]
+                    binding.answer21.text=answer[4]
+                    binding.answer22.text=answer[5]
                 }
                 3->{
-
+                    i++
+                    t++
+                    BgMusic=MediaPlayer.create(context, R.raw.right)
+                    BgMusic?.start()
+                    rightDialog.show(requireFragmentManager(),"sdfghjkl")
+                    binding.question2.text=question[4]
+                    binding.answer21.text=answer[8]
+                    binding.answer22.text=answer[9]
                 }
                 5->{
-
+                    i++
+                    t++
+                    BgMusic=MediaPlayer.create(context, R.raw.right)
+                    BgMusic?.start()
+                    rightDialog.show(requireFragmentManager(),"sdfghjkl")
+                    binding.question2.text=question[6]
+                    binding.answer21.text=answer[12]
+                    binding.answer22.text=answer[13]
                 }
             }
         }
