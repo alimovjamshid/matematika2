@@ -41,7 +41,7 @@ open class PlayActivity : AppCompatActivity() {
         list=list+Item("20 soni va qo'shish, ayirish",R.drawable.a20)
         list=list+Item("Vaqt birligi",R.drawable.a7)
         list=list+Item("Hafta kunlari",R.drawable.a8)
-        list=list+Item("Og'irlik o'lchovi",R.drawable.a9)
+        list=list+Item("Og'irlik o'lchovi",R.drawable.abd)
         list=list+Item("Geometrik shakllar",R.drawable.a21)
         list=list+Item("Geometrik burchaklar",R.drawable.aaa2)
         list=list+Item("Uzunlik o'lchovi",R.drawable.a22)
@@ -901,7 +901,35 @@ open class PlayActivity : AppCompatActivity() {
                 }
                 16 -> {
                     //ogirlik olchovi
+                    question.clear()
+                    question.add("Tuz necha kg?")
+                    question.add("Un necha kg?")
+                    question.add("Karam necha kg?")
+                    question.add("Qovoq necha kg?")
+                    question.add("Tarvuz necha kg?")
 
+                    image.clear()
+                    image.add(R.drawable.img_15)
+                    image.add(R.drawable.img_16)
+                    image.add(R.drawable.img_17)
+                    image.add(R.drawable.img_18)
+                    image.add(R.drawable.img_19)
+
+                    answer.clear()
+                    answer.add("1")
+                    answer.add("3")
+
+                    answer.add("2")
+                    answer.add("5")
+
+                    answer.add("4")
+                    answer.add("1")
+
+                    answer.add("7")
+                    answer.add("6")
+
+                    answer.add("5")
+                    answer.add("3")
                 }
                 17 -> {
                     //geomtrik shakkllar
@@ -955,7 +983,35 @@ open class PlayActivity : AppCompatActivity() {
                 }
                 19 -> {
                     //uzunlik o'lchovi
+                    question.clear()
+                    question.add("Kesmaning uzunligi necha sm?")
+                    question.add("Kesmaning uzunligi necha sm?")
+                    question.add("Kesmaning uzunligi necha sm?")
+                    question.add("Qizil kesmaning uzunligi necha sm?")
+                    question.add("Ko'k kesmaning uzunligi necha sm?")
 
+                    image.clear()
+                    image.add(R.drawable.img_11)
+                    image.add(R.drawable.img_12)
+                    image.add(R.drawable.img_13)
+                    image.add(R.drawable.img_14)
+                    image.add(R.drawable.img_14)
+
+                    answer.clear()
+                    answer.add("4")
+                    answer.add("5")
+
+                    answer.add("6")
+                    answer.add("3")
+
+                    answer.add("8")
+                    answer.add("7")
+
+                    answer.add("6")
+                    answer.add("5")
+
+                    answer.add("2")
+                    answer.add("3")
                 }
                 20 -> {
                     question.clear()
