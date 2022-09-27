@@ -32,6 +32,7 @@ class ImageFragment:DialogFragment() {
         val bundle=this.arguments
         val question:ArrayList<String> = bundle?.getStringArrayList("question") as ArrayList<String>
         val image:ArrayList<Int> = bundle?.getIntegerArrayList("image") as ArrayList<Int>
+        val sound:ArrayList<Int> =bundle?.getIntegerArrayList("sound") as ArrayList<Int>
 
         binding.answer.text=question[0]
         binding.ikki1.setImageResource(image[0])
@@ -112,6 +113,11 @@ class ImageFragment:DialogFragment() {
                     wrongdialog.show(requireFragmentManager(),"swdfghjk")
                 }
             }
+        }
+
+        binding.sound.setOnClickListener {
+            BgMusic=MediaPlayer.create(context, sound[i])
+            BgMusic?.start()
         }
 
         return binding.root

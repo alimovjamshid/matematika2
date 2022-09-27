@@ -29,6 +29,7 @@ class FourFragment:DialogFragment() {
         val question:ArrayList<String> = bundle?.getStringArrayList("question") as ArrayList<String>
         val answer:ArrayList<String> =bundle?.getStringArrayList("answer") as ArrayList<String>
         val baa:ArrayList<String> =bundle?.getStringArrayList("baa") as ArrayList<String>
+        val sound:ArrayList<Int> =bundle?.getIntegerArrayList("sound") as ArrayList<Int>
         var i:Int= bundle?.getInt("i") as Int
         var t:Int=bundle?.getInt("t") as Int
         var f:Int=bundle?.getInt("f") as Int
@@ -126,6 +127,10 @@ class FourFragment:DialogFragment() {
             }
         }
 
+        binding.sound.setOnClickListener {
+            BgMusic=MediaPlayer.create(context, sound[i])
+            BgMusic?.start()
+        }
 
         return binding.root
     }

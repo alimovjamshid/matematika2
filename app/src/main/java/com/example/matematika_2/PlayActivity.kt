@@ -109,7 +109,17 @@ open class PlayActivity : AppCompatActivity() {
                     baa.add("2")
                     baa.add("5")
 
-
+                    sound.clear()
+                    sound.add(R.raw.a1)
+                    sound.add(R.raw.a2)
+                    sound.add(R.raw.a3)
+                    sound.add(R.raw.a4)
+                    sound.add(R.raw.a5)
+                    sound.add(R.raw.a6)
+                    sound.add(R.raw.a7)
+                    sound.add(R.raw.a8)
+                    sound.add(R.raw.a9)
+                    sound.add(R.raw.a10)
                 }
                 1 -> {
                     question.clear()
@@ -121,8 +131,8 @@ open class PlayActivity : AppCompatActivity() {
                     question.add("7 sonining qo'shni sonini toping?")
                     question.add("Eng katta sonni toping?")
                     question.add("Eng kichik sonni toping")
-                    question.add("Qaysi sonlar o'zaro teng")
-                    question.add("Qaysi sonlar o'zaro teng")
+                    question.add("Eng kichik sonni belgilang")
+                    question.add("Eng katta sonni belgilang")
 
                     answer.clear()
                     answer.add("2")
@@ -134,7 +144,7 @@ open class PlayActivity : AppCompatActivity() {
                     answer.add("10")
                     answer.add("0")
                     answer.add("5")
-                    answer.add("2")
+                    answer.add("8")
 
                     baa.clear()
                     baa.add("4")
@@ -167,6 +177,17 @@ open class PlayActivity : AppCompatActivity() {
                     baa.add("2")
                     baa.add("5")
 
+                    sound.clear()
+                    sound.add(R.raw.b1)
+                    sound.add(R.raw.b2)
+                    sound.add(R.raw.b3)
+                    sound.add(R.raw.b4)
+                    sound.add(R.raw.b5)
+                    sound.add(R.raw.b6)
+                    sound.add(R.raw.b7)
+                    sound.add(R.raw.b8)
+                    sound.add(R.raw.b9)
+                    sound.add(R.raw.b10)
                 }
                 2 -> {
                     question.clear()
@@ -224,6 +245,17 @@ open class PlayActivity : AppCompatActivity() {
                     baa.add("2")
                     baa.add("5")
 
+                    sound.clear()
+                    sound.add(R.raw.c1)
+                    sound.add(R.raw.c2)
+                    sound.add(R.raw.c3)
+                    sound.add(R.raw.c4)
+                    sound.add(R.raw.c5)
+                    sound.add(R.raw.c6)
+                    sound.add(R.raw.c7)
+                    sound.add(R.raw.c8)
+                    sound.add(R.raw.c9)
+                    sound.add(R.raw.c10)
                 }
                 3 -> {
                     question.clear()
@@ -280,6 +312,18 @@ open class PlayActivity : AppCompatActivity() {
                     baa.add("4")
                     baa.add("2")
                     baa.add("9")
+
+                    sound.clear()
+                    sound.add(R.raw.d1)
+                    sound.add(R.raw.d2)
+                    sound.add(R.raw.d3)
+                    sound.add(R.raw.d4)
+                    sound.add(R.raw.d5)
+                    sound.add(R.raw.d6)
+                    sound.add(R.raw.d7)
+                    sound.add(R.raw.d8)
+                    sound.add(R.raw.d9)
+                    sound.add(R.raw.d10)
                 }
                 4 -> {
                     question.clear()
@@ -336,6 +380,18 @@ open class PlayActivity : AppCompatActivity() {
                     baa.add("4")
                     baa.add("2")
                     baa.add("7")
+
+                    sound.clear()
+                    sound.add(R.raw.e1)
+                    sound.add(R.raw.e2)
+                    sound.add(R.raw.e3)
+                    sound.add(R.raw.e4)
+                    sound.add(R.raw.e5)
+                    sound.add(R.raw.e6)
+                    sound.add(R.raw.e7)
+                    sound.add(R.raw.e8)
+                    sound.add(R.raw.e9)
+                    sound.add(R.raw.e10)
                 }
                 5 -> {
                     question.clear()
@@ -392,6 +448,18 @@ open class PlayActivity : AppCompatActivity() {
                     baa.add("4")
                     baa.add("2")
                     baa.add("7")
+
+                    sound.clear()
+                    sound.add(R.raw.f1)
+                    sound.add(R.raw.f2)
+                    sound.add(R.raw.f3)
+                    sound.add(R.raw.f4)
+                    sound.add(R.raw.f5)
+                    sound.add(R.raw.f6)
+                    sound.add(R.raw.f7)
+                    sound.add(R.raw.f8)
+                    sound.add(R.raw.f9)
+                    sound.add(R.raw.f10)
                 }
                 6 -> {
                     question.clear()
@@ -448,6 +516,18 @@ open class PlayActivity : AppCompatActivity() {
                     baa.add("4")
                     baa.add("2")
                     baa.add("7")
+
+                    sound.clear()
+                    sound.add(R.raw.g1)
+                    sound.add(R.raw.g2)
+                    sound.add(R.raw.g3)
+                    sound.add(R.raw.g4)
+                    sound.add(R.raw.g5)
+                    sound.add(R.raw.g6)
+                    sound.add(R.raw.g7)
+                    sound.add(R.raw.g8)
+                    sound.add(R.raw.g9)
+                    sound.add(R.raw.g10)
                 }
                 7 -> {
                     question.clear()
@@ -504,6 +584,18 @@ open class PlayActivity : AppCompatActivity() {
                     baa.add("4")
                     baa.add("2")
                     baa.add("7")
+
+                    sound.clear()
+                    sound.add(R.raw.h1)
+                    sound.add(R.raw.h2)
+                    sound.add(R.raw.h3)
+                    sound.add(R.raw.h4)
+                    sound.add(R.raw.h5)
+                    sound.add(R.raw.h6)
+                    sound.add(R.raw.h7)
+                    sound.add(R.raw.h8)
+                    sound.add(R.raw.h9)
+                    sound.add(R.raw.h10)
                 }
                 8 -> {
                     question.clear()
@@ -560,6 +652,18 @@ open class PlayActivity : AppCompatActivity() {
                     baa.add("4")
                     baa.add("2")
                     baa.add("15")
+
+                    sound.clear()
+                    sound.add(R.raw.aa1)
+                    sound.add(R.raw.aa2)
+                    sound.add(R.raw.aa3)
+                    sound.add(R.raw.aa4)
+                    sound.add(R.raw.aa5)
+                    sound.add(R.raw.aa6)
+                    sound.add(R.raw.aa7)
+                    sound.add(R.raw.aa8)
+                    sound.add(R.raw.aa9)
+                    sound.add(R.raw.aa10)
                 }
                 9 -> {
                     question.clear()
@@ -616,6 +720,18 @@ open class PlayActivity : AppCompatActivity() {
                     baa.add("4")
                     baa.add("2")
                     baa.add("7")
+
+                    sound.clear()
+                    sound.add(R.raw.ba1)
+                    sound.add(R.raw.ba2)
+                    sound.add(R.raw.ba3)
+                    sound.add(R.raw.ba4)
+                    sound.add(R.raw.ba5)
+                    sound.add(R.raw.ba6)
+                    sound.add(R.raw.ba7)
+                    sound.add(R.raw.ba8)
+                    sound.add(R.raw.ba9)
+                    sound.add(R.raw.ba10)
                 }
                 10 -> {
                     question.clear()
@@ -672,6 +788,18 @@ open class PlayActivity : AppCompatActivity() {
                     baa.add("4")
                     baa.add("16")
                     baa.add("7")
+
+                    sound.clear()
+                    sound.add(R.raw.bb1)
+                    sound.add(R.raw.bb2)
+                    sound.add(R.raw.bb3)
+                    sound.add(R.raw.bb4)
+                    sound.add(R.raw.bb5)
+                    sound.add(R.raw.bb6)
+                    sound.add(R.raw.bb7)
+                    sound.add(R.raw.bb8)
+                    sound.add(R.raw.bb9)
+                    sound.add(R.raw.bb10)
                 }
                 11 -> {
                     question.clear()
@@ -728,6 +856,18 @@ open class PlayActivity : AppCompatActivity() {
                     baa.add("4")
                     baa.add("12")
                     baa.add("7")
+
+                    sound.clear()
+                    sound.add(R.raw.bc1)
+                    sound.add(R.raw.bc2)
+                    sound.add(R.raw.bc3)
+                    sound.add(R.raw.bc4)
+                    sound.add(R.raw.bc5)
+                    sound.add(R.raw.bc6)
+                    sound.add(R.raw.bc7)
+                    sound.add(R.raw.bc8)
+                    sound.add(R.raw.bc9)
+                    sound.add(R.raw.bc10)
                 }
                 12 -> {
                     question.clear()
@@ -784,6 +924,18 @@ open class PlayActivity : AppCompatActivity() {
                     baa.add("4")
                     baa.add("12")
                     baa.add("15")
+
+                    sound.clear()
+                    sound.add(R.raw.bd1)
+                    sound.add(R.raw.bd2)
+                    sound.add(R.raw.bd3)
+                    sound.add(R.raw.bd4)
+                    sound.add(R.raw.bd5)
+                    sound.add(R.raw.bd6)
+                    sound.add(R.raw.bd7)
+                    sound.add(R.raw.bd8)
+                    sound.add(R.raw.bd9)
+                    sound.add(R.raw.bd10)
                 }
                 13 -> {
                     question.clear()
@@ -840,6 +992,18 @@ open class PlayActivity : AppCompatActivity() {
                     baa.add("14")
                     baa.add("20")
                     baa.add("17")
+
+                    sound.clear()
+                    sound.add(R.raw.be1)
+                    sound.add(R.raw.be2)
+                    sound.add(R.raw.be3)
+                    sound.add(R.raw.be4)
+                    sound.add(R.raw.be5)
+                    sound.add(R.raw.be6)
+                    sound.add(R.raw.be7)
+                    sound.add(R.raw.be8)
+                    sound.add(R.raw.be9)
+                    sound.add(R.raw.be10)
                 }
                 14 -> {
                     //vaqt  birligi
@@ -865,6 +1029,13 @@ open class PlayActivity : AppCompatActivity() {
 
                     image.add(R.drawable.img_5)
                     image.add(R.drawable.img_3)
+
+                    sound.clear()
+                    sound.add(R.raw.bf1)
+                    sound.add(R.raw.bf2)
+                    sound.add(R.raw.bf3)
+                    sound.add(R.raw.bf4)
+                    sound.add(R.raw.bf5)
                 }
                 15 -> {
                     //hafta kunlari
@@ -898,6 +1069,15 @@ open class PlayActivity : AppCompatActivity() {
 
                     answer.add("Shanba")
                     answer.add("Seshanba")
+
+                    sound.clear()
+                    sound.add(R.raw.bg1)
+                    sound.add(R.raw.bg2)
+                    sound.add(R.raw.b3)
+                    sound.add(R.raw.bg4)
+                    sound.add(R.raw.bg5)
+                    sound.add(R.raw.bg6)
+                    sound.add(R.raw.bg7)
                 }
                 16 -> {
                     //ogirlik olchovi
@@ -930,6 +1110,13 @@ open class PlayActivity : AppCompatActivity() {
 
                     answer.add("5")
                     answer.add("3")
+
+                    sound.clear()
+                    sound.add(R.raw.bh1)
+                    sound.add(R.raw.bh2)
+                    sound.add(R.raw.bh3)
+                    sound.add(R.raw.bh4)
+                    sound.add(R.raw.bh5)
                 }
                 17 -> {
                     //geomtrik shakkllar
@@ -955,6 +1142,13 @@ open class PlayActivity : AppCompatActivity() {
 
                     image.add(R.drawable.img_8)
                     image.add(R.drawable.img_9)
+
+                    sound.clear()
+                    sound.add(R.raw.ca1)
+                    sound.add(R.raw.ca2)
+                    sound.add(R.raw.ca3)
+                    sound.add(R.raw.ca4)
+                    sound.add(R.raw.ca5)
                 }
                 18 -> {
                     //geometrik burchak
@@ -980,6 +1174,13 @@ open class PlayActivity : AppCompatActivity() {
 
                     image.add(R.drawable.aaa4)
                     image.add(R.drawable.aaa)
+
+                    sound.clear()
+                    sound.add(R.raw.cb1)
+                    sound.add(R.raw.cb2)
+                    sound.add(R.raw.cb3)
+                    sound.add(R.raw.cb4)
+                    sound.add(R.raw.cb5)
                 }
                 19 -> {
                     //uzunlik o'lchovi
@@ -1012,6 +1213,13 @@ open class PlayActivity : AppCompatActivity() {
 
                     answer.add("2")
                     answer.add("3")
+
+                    sound.clear()
+                    sound.add(R.raw.cc1)
+                    sound.add(R.raw.cc2)
+                    sound.add(R.raw.cc3)
+                    sound.add(R.raw.cc4)
+                    sound.add(R.raw.cc5)
                 }
                 20 -> {
                     question.clear()
@@ -1068,6 +1276,18 @@ open class PlayActivity : AppCompatActivity() {
                     baa.add("4")
                     baa.add("2")
                     baa.add("7")
+
+                    sound.clear()
+                    sound.add(R.raw.cd1)
+                    sound.add(R.raw.cd2)
+                    sound.add(R.raw.cd3)
+                    sound.add(R.raw.cd4)
+                    sound.add(R.raw.cd5)
+                    sound.add(R.raw.cd6)
+                    sound.add(R.raw.cd7)
+                    sound.add(R.raw.cd8)
+                    sound.add(R.raw.cd9)
+                    sound.add(R.raw.cd10)
                 }
             }
             startActivity(Intent(this, TaskActivity::class.java))

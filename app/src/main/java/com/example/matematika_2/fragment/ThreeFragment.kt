@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.matematika_2.PlayActivity
 import com.example.matematika_2.R
@@ -30,6 +29,7 @@ class ThreeFragment:Fragment() {
         val question:ArrayList<String> = bundle?.getStringArrayList("question") as ArrayList<String>
         val answer:ArrayList<String> =bundle?.getStringArrayList("answer") as ArrayList<String>
         val baa:ArrayList<String> =bundle?.getStringArrayList("baa") as ArrayList<String>
+        val sound:ArrayList<Int> =bundle?.getIntegerArrayList("sound") as ArrayList<Int>
         var i:Int= bundle?.getInt("i") as Int
         var t:Int=bundle?.getInt("t") as Int
         var f:Int=bundle?.getInt("f") as Int
@@ -39,6 +39,7 @@ class ThreeFragment:Fragment() {
         mbundle.putStringArrayList("question", PlayActivity.question)
         mbundle.putStringArrayList("answer", PlayActivity.answer)
         mbundle.putStringArrayList("baa", PlayActivity.baa)
+        mbundle.putIntegerArrayList("sound",PlayActivity.sound)
         mfragment.arguments=mbundle
 
         binding.question3.text=question[i]
@@ -93,6 +94,10 @@ class ThreeFragment:Fragment() {
             }
         }
 
+        binding.sound.setOnClickListener {
+            BgMusic=MediaPlayer.create(context, sound[i])
+            BgMusic?.start()
+        }
 
         return binding.root
     }

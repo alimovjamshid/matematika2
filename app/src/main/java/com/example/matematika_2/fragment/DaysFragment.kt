@@ -31,6 +31,7 @@ class DaysFragment:DialogFragment() {
         val bundle=this.arguments
         val question:ArrayList<String> = bundle?.getStringArrayList("question") as ArrayList<String>
         val answer:ArrayList<String> = bundle?.getStringArrayList("answer") as ArrayList<String>
+        val sound:ArrayList<Int> =bundle?.getIntegerArrayList("sound") as ArrayList<Int>
 
         binding.question2.text=question[0]
 
@@ -84,6 +85,12 @@ class DaysFragment:DialogFragment() {
                     dialog?.window?.setBackgroundDrawableResource(android.R.color.transparent)
                     fragmentManager?.beginTransaction()?.add(R.id.fragment,mfragment)?.commit()
                 }
+                else -> {
+                    f++
+                    BgMusic=MediaPlayer.create(context, R.raw.wrong)
+                    BgMusic?.start()
+                    wrongdialog.show(requireFragmentManager(),"swdfghjk")
+                }
             }
         }
 
@@ -119,9 +126,19 @@ class DaysFragment:DialogFragment() {
                     binding.answer21.text=answer[12]
                     binding.answer22.text=answer[13]
                 }
+                else -> {
+                    f++
+                    BgMusic=MediaPlayer.create(context, R.raw.wrong)
+                    BgMusic?.start()
+                    wrongdialog.show(requireFragmentManager(),"swdfghjk")
+                }
             }
         }
 
+        binding.sound.setOnClickListener {
+            BgMusic=MediaPlayer.create(context, sound[i])
+            BgMusic?.start()
+        }
 
         return binding.root
     }

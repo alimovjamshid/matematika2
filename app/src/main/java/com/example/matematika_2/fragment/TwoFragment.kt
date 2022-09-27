@@ -33,6 +33,7 @@ class TwoFragment:Fragment() {
         val question:ArrayList<String> = bundle?.getStringArrayList("question") as ArrayList<String>
         val answer:ArrayList<String> =bundle?.getStringArrayList("answer") as ArrayList<String>
         val baa:ArrayList<String> =bundle?.getStringArrayList("baa") as ArrayList<String>
+        val sound:ArrayList<Int> =bundle?.getIntegerArrayList("sound") as ArrayList<Int>
         binding.question2.text=question[i]
         binding.answer21.text=answer[i]
         binding.answer22.text=baa[i]
@@ -42,6 +43,7 @@ class TwoFragment:Fragment() {
         mbundle.putStringArrayList("question", PlayActivity.question)
         mbundle.putStringArrayList("answer", PlayActivity.answer)
         mbundle.putStringArrayList("baa", PlayActivity.baa)
+        mbundle.putIntegerArrayList("sound",PlayActivity.sound)
         mfragment.arguments=mbundle
 
 
@@ -110,7 +112,8 @@ class TwoFragment:Fragment() {
         }
 
         binding.sound.setOnClickListener {
-
+            BgMusic=MediaPlayer.create(context, sound[i])
+            BgMusic?.start()
         }
 
         return binding.root

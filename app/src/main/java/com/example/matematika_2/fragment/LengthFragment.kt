@@ -32,6 +32,7 @@ class LengthFragment:DialogFragment() {
         val question:ArrayList<String> = bundle?.getStringArrayList("question") as ArrayList<String>
         val image:ArrayList<Int> = bundle?.getIntegerArrayList("image") as ArrayList<Int>
         val answer:ArrayList<String> =bundle?.getStringArrayList("answer") as ArrayList<String>
+        val sound:ArrayList<Int> =bundle?.getIntegerArrayList("sound") as ArrayList<Int>
 
         binding.txt.text=question[0]
         binding.img.setImageResource(image[0])
@@ -122,6 +123,11 @@ class LengthFragment:DialogFragment() {
         val mfragment=MondatDialog()
         val mbundle=Bundle()
         mfragment.arguments=mbundle
+
+        binding.sound.setOnClickListener {
+            BgMusic=MediaPlayer.create(context, sound[i])
+            BgMusic?.start()
+        }
 
         return binding.root
     }

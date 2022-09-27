@@ -23,6 +23,7 @@ class TaskActivity : PlayActivity(){
         bundle.putStringArrayList("answer", answer)
         bundle.putStringArrayList("baa", baa)
         bundle.putIntegerArrayList("image", image)
+        bundle.putIntegerArrayList("sound", sound)
         nFragment.arguments = bundle
         mFragment.arguments=bundle
         kFragment.arguments=bundle
