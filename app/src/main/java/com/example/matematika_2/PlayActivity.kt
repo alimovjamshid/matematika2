@@ -1188,15 +1188,15 @@ open class PlayActivity : AppCompatActivity() {
                     question.add("Kesmaning uzunligi necha sm?")
                     question.add("Kesmaning uzunligi necha sm?")
                     question.add("Kesmaning uzunligi necha sm?")
-                    question.add("Qizil kesmaning uzunligi necha sm?")
-                    question.add("Ko'k kesmaning uzunligi necha sm?")
+                    question.add("Kesmaning uzunligi necha sm?")
+                    question.add("Qalamning uzunligi necha sm?")
 
                     image.clear()
                     image.add(R.drawable.img_11)
                     image.add(R.drawable.img_12)
                     image.add(R.drawable.img_13)
                     image.add(R.drawable.img_14)
-                    image.add(R.drawable.img_14)
+                    image.add(R.drawable.img_20)
 
                     answer.clear()
                     answer.add("4")
@@ -1208,18 +1208,18 @@ open class PlayActivity : AppCompatActivity() {
                     answer.add("8")
                     answer.add("7")
 
-                    answer.add("6")
+                    answer.add("3")
                     answer.add("5")
 
-                    answer.add("2")
-                    answer.add("3")
+                    answer.add("7")
+                    answer.add("6")
 
                     sound.clear()
                     sound.add(R.raw.cc1)
                     sound.add(R.raw.cc2)
                     sound.add(R.raw.cc3)
-                    sound.add(R.raw.cc4)
-                    sound.add(R.raw.cc5)
+                    sound.add(R.raw.cc3)
+                    sound.add(R.raw.recording)
                 }
                 20 -> {
                     question.clear()
