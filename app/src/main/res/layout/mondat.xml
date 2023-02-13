@@ -44,7 +44,7 @@
                 android:layout_height="@dimen/_30sdp"
                 android:layout_marginStart="@dimen/_15sdp"
                 android:layout_marginTop="@dimen/_70sdp"
-                android:src="@drawable/unsucces"
+                android:src="@drawable/unsucce"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 

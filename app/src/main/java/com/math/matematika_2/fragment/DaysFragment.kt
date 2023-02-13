@@ -1,4 +1,4 @@
-package com.example.matematika_2.fragment
+package com.math.matematika_2.fragment
 
 import android.media.MediaPlayer
 import android.os.Bundle
@@ -6,21 +6,21 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.DialogFragment
-import com.example.matematika_2.R
-import com.example.matematika_2.databinding.FragmentLengthBinding
-import com.example.matematika_2.dialog.RightDialog
-import com.example.matematika_2.dialog.WrongDialog
+import com.math.matematika_2.R
+import com.math.matematika_2.databinding.FragmentDaysBinding
+import com.math.matematika_2.dialog.RightDialog
+import com.math.matematika_2.dialog.WrongDialog
 
 @Suppress("DEPRECATION")
-class LengthFragment:DialogFragment() {
+class DaysFragment:DialogFragment() {
     private var BgMusic: MediaPlayer? = null
-    private lateinit var binding:FragmentLengthBinding
+    private lateinit var binding: FragmentDaysBinding
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding=FragmentLengthBinding.inflate(inflater)
+        binding=FragmentDaysBinding.inflate(inflater)
 
         var t=0
         var f=0
@@ -31,42 +31,39 @@ class LengthFragment:DialogFragment() {
 
         val bundle=this.arguments
         val question:ArrayList<String> = bundle?.getStringArrayList("question") as ArrayList<String>
-        val image:ArrayList<Int> = bundle.getIntegerArrayList("image") as ArrayList<Int>
         val answer:ArrayList<String> = bundle.getStringArrayList("answer") as ArrayList<String>
         val sound:ArrayList<Int> = bundle.getIntegerArrayList("sound") as ArrayList<Int>
 
-        binding.txt.text=question[0]
-        binding.img.setImageResource(image[0])
-        binding.btn1.text=answer[0]
-        binding.btn2.text=answer[1]
+        binding.question2.text=question[0]
 
-        val afragment=MondatDialog()
-        val abundle=Bundle()
-        afragment.arguments=abundle
+        binding.answer21.text=answer[0]
+        binding.answer22.text=answer[1]
 
-        binding.btn1.setOnClickListener {
-            when(i) {
-                0 -> {
+        val mfragment= MondatDialog()
+        val mbundle=Bundle()
+        mfragment.arguments=mbundle
+
+        binding.answer21.setOnClickListener {
+            when(i){
+                0->{
                     i++
                     t++
                     BgMusic=MediaPlayer.create(context, R.raw.right)
                     BgMusic?.start()
                     rightDialog.show(requireFragmentManager(),"sdfghjkl")
-                    binding.txt.text = question[1]
-                    binding.img.setImageResource(image[1])
-                    binding.btn2.text=answer[2]
-                    binding.btn1.text=answer[3]
+                    binding.question2.text=question[1]
+                    binding.answer22.text=answer[2]
+                    binding.answer21.text=answer[3]
                 }
-                2 -> {
+                2->{
                     i++
                     t++
                     BgMusic=MediaPlayer.create(context, R.raw.right)
                     BgMusic?.start()
                     rightDialog.show(requireFragmentManager(),"sdfghjkl")
-                    binding.txt.text = question[3]
-                    binding.img.setImageResource(image[3])
-                    binding.btn2.text=answer[6]
-                    binding.btn1.text=answer[7]
+                    binding.question2.text=question[3]
+                    binding.answer22.text=answer[6]
+                    binding.answer21.text=answer[7]
                 }
                 4->{
                     i++
@@ -74,10 +71,20 @@ class LengthFragment:DialogFragment() {
                     BgMusic=MediaPlayer.create(context, R.raw.right)
                     BgMusic?.start()
                     rightDialog.show(requireFragmentManager(),"sdfghjkl")
-                    abundle.putInt("t",t)
-                    abundle.putInt("f",f)
+                    binding.question2.text=question[5]
+                    binding.answer22.text=answer[10]
+                    binding.answer21.text=answer[11]
+                }
+                6->{
+                    i++
+                    t++
+                    BgMusic=MediaPlayer.create(context, R.raw.right)
+                    BgMusic?.start()
+                    rightDialog.show(requireFragmentManager(),"sdfghjkl")
+                    mbundle.putInt("t",t)
+                    mbundle.putInt("f",f)
                     dialog?.window?.setBackgroundDrawableResource(android.R.color.transparent)
-                    fragmentManager?.beginTransaction()?.add(R.id.fragment,afragment)?.commit()
+                    fragmentManager?.beginTransaction()?.add(R.id.fragment,mfragment)?.commit()
                 }
                 else -> {
                     f++
@@ -88,29 +95,37 @@ class LengthFragment:DialogFragment() {
             }
         }
 
-        binding.btn2.setOnClickListener {
-            when(i) {
-                1 -> {
+        binding.answer22.setOnClickListener {
+            when(i){
+                1->{
                     i++
                     t++
                     BgMusic=MediaPlayer.create(context, R.raw.right)
                     BgMusic?.start()
                     rightDialog.show(requireFragmentManager(),"sdfghjkl")
-                    binding.txt.text=question[2]
-                    binding.img.setImageResource(image[2])
-                    binding.btn1.text=answer[4]
-                    binding.btn2.text=answer[5]
+                    binding.question2.text=question[2]
+                    binding.answer21.text=answer[4]
+                    binding.answer22.text=answer[5]
                 }
-                3 -> {
+                3->{
                     i++
                     t++
                     BgMusic=MediaPlayer.create(context, R.raw.right)
                     BgMusic?.start()
                     rightDialog.show(requireFragmentManager(),"sdfghjkl")
-                    binding.txt.text=question[4]
-                    binding.img.setImageResource(image[4])
-                    binding.btn1.text=answer[8]
-                    binding.btn2.text=answer[9]
+                    binding.question2.text=question[4]
+                    binding.answer21.text=answer[8]
+                    binding.answer22.text=answer[9]
+                }
+                5->{
+                    i++
+                    t++
+                    BgMusic=MediaPlayer.create(context, R.raw.right)
+                    BgMusic?.start()
+                    rightDialog.show(requireFragmentManager(),"sdfghjkl")
+                    binding.question2.text=question[6]
+                    binding.answer21.text=answer[12]
+                    binding.answer22.text=answer[13]
                 }
                 else -> {
                     f++
@@ -120,10 +135,6 @@ class LengthFragment:DialogFragment() {
                 }
             }
         }
-
-        val mfragment=MondatDialog()
-        val mbundle=Bundle()
-        mfragment.arguments=mbundle
 
         binding.sound.setOnClickListener {
             BgMusic=MediaPlayer.create(context, sound[i])

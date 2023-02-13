@@ -1,4 +1,4 @@
-package com.example.matematika_2.fragment
+package com.math.matematika_2.fragment
 
 import android.media.MediaPlayer
 import android.os.Bundle
@@ -6,10 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.DialogFragment
-import com.example.matematika_2.R
-import com.example.matematika_2.databinding.FragmentFourBinding
-import com.example.matematika_2.dialog.RightDialog
-import com.example.matematika_2.dialog.WrongDialog
+import com.math.matematika_2.R
+import com.math.matematika_2.databinding.FragmentFourBinding
+import com.math.matematika_2.dialog.RightDialog
+import com.math.matematika_2.dialog.WrongDialog
 
 @Suppress("DEPRECATION")
 class FourFragment:DialogFragment() {
@@ -40,7 +40,7 @@ class FourFragment:DialogFragment() {
         binding.amswer43.text=baa[i+3]
         binding.answer44.text=baa[i+4]
 
-        val mfragment=MondatDialog()
+        val mfragment= MondatDialog()
         val mbundle=Bundle()
         mfragment.arguments=mbundle
 

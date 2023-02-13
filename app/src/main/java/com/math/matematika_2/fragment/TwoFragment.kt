@@ -1,4 +1,4 @@
-package com.example.matematika_2.fragment
+package com.math.matematika_2.fragment
 
 import android.media.MediaPlayer
 import android.os.Bundle
@@ -6,16 +6,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.matematika_2.PlayActivity
-import com.example.matematika_2.R
-import com.example.matematika_2.databinding.FragmenrTwoBinding
-import com.example.matematika_2.dialog.RightDialog
-import com.example.matematika_2.dialog.WrongDialog
+import com.math.matematika_2.PlayActivity
+import com.math.matematika_2.R
+import com.math.matematika_2.databinding.FragmenrTwoBinding
+import com.math.matematika_2.dialog.RightDialog
+import com.math.matematika_2.dialog.WrongDialog
 
 @Suppress("DEPRECATION")
 class TwoFragment:Fragment() {
     private var BgMusic: MediaPlayer? = null
-    private lateinit var binding:FragmenrTwoBinding
+    private lateinit var binding: FragmenrTwoBinding
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -39,12 +39,12 @@ class TwoFragment:Fragment() {
         binding.answer21.text=answer[i]
         binding.answer22.text=baa[i]
 
-        val mfragment=ThreeFragment()
+        val mfragment= ThreeFragment()
         val mbundle=Bundle()
         mbundle.putStringArrayList("question", PlayActivity.question)
         mbundle.putStringArrayList("answer", PlayActivity.answer)
         mbundle.putStringArrayList("baa", PlayActivity.baa)
-        mbundle.putIntegerArrayList("sound",PlayActivity.sound)
+        mbundle.putIntegerArrayList("sound", PlayActivity.sound)
         mfragment.arguments=mbundle
 
 

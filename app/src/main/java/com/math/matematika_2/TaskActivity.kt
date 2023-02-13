@@ -1,11 +1,11 @@
-package com.example.matematika_2
+package com.math.matematika_2
 
 import android.os.Bundle
-import com.example.matematika_2.databinding.ActivityTaskBinding
-import com.example.matematika_2.fragment.DaysFragment
-import com.example.matematika_2.fragment.ImageFragment
-import com.example.matematika_2.fragment.LengthFragment
-import com.example.matematika_2.fragment.TwoFragment
+import com.math.matematika_2.databinding.ActivityTaskBinding
+import com.math.matematika_2.fragment.DaysFragment
+import com.math.matematika_2.fragment.ImageFragment
+import com.math.matematika_2.fragment.LengthFragment
+import com.math.matematika_2.fragment.TwoFragment
 
 class TaskActivity : PlayActivity(){
     private lateinit var binding: ActivityTaskBinding

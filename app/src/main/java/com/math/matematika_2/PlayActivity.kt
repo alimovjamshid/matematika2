@@ -1,11 +1,11 @@
-package com.example.matematika_2
+package com.math.matematika_2
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.matematika_2.databinding.ActivityPlayBinding
+import com.math.matematika_2.databinding.ActivityPlayBinding
 
 open class PlayActivity : AppCompatActivity() {
     private lateinit var binding: ActivityPlayBinding
@@ -24,29 +24,29 @@ open class PlayActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         list= arrayListOf()
-        list=list+Item("1 dan 10 gacha sonlarni taqqoslash",R.drawable.a4)
-        list=list+Item("1 dan 10 gacha qo‘shni sonlarni aniqlash",R.drawable.img)
-        list=list+Item("1 dan 5 gacha sonlarni qo'shish va ayirish",R.drawable.a1)
-        list=list+Item("1 dan 10 gacha sonlarni qo'shish va ayirish",R.drawable.a2)
-        list=list+Item("11 soni va qo'shish, ayirish",R.drawable.a11)
-        list=list+Item("12 soni va qo'shish, ayirish",R.drawable.a12)
-        list=list+Item("13 soni va qo'shish, ayirish",R.drawable.a13)
-        list=list+Item("14 soni va qo'shish, ayirish",R.drawable.a14)
-        list=list+Item("15 soni va qo'shish, ayirish",R.drawable.a15)
-        list=list+Item("16 soni va qo'shish, ayirish",R.drawable.a16)
-        list=list+Item("17 soni va qo'shish, ayirish",R.drawable.a17)
-        list=list+Item("18 soni va qo'shish, ayirish",R.drawable.a18)
-        list=list+Item("19 soni va qo'shish, ayirish",R.drawable.a19)
-        list=list+Item("20 soni va qo'shish, ayirish",R.drawable.a20)
-        list=list+Item("Vaqt birligi",R.drawable.a7)
-        list=list+Item("Hafta kunlari",R.drawable.a8)
-        list=list+Item("Og'irlik o'lchovi",R.drawable.abd)
-        list=list+Item("Geometrik shakllar",R.drawable.a21)
-        list=list+Item("Geometrik burchaklar",R.drawable.aaa2)
-        list=list+Item("Uzunlik o'lchovi",R.drawable.a22)
-        list=list+Item("Qo'shib ayirishni takrorlash",R.drawable.a)
+        list=list+ Item("1 dan 10 gacha sonlarni taqqoslash",R.drawable.a4)
+        list=list+ Item("1 dan 10 gacha qo‘shni sonlarni aniqlash",R.drawable.img)
+        list=list+ Item("1 dan 5 gacha sonlarni qo'shish va ayirish",R.drawable.a1)
+        list=list+ Item("1 dan 10 gacha sonlarni qo'shish va ayirish",R.drawable.a2)
+        list=list+ Item("11 soni va qo'shish, ayirish",R.drawable.a11)
+        list=list+ Item("12 soni va qo'shish, ayirish",R.drawable.a12)
+        list=list+ Item("13 soni va qo'shish, ayirish",R.drawable.a13)
+        list=list+ Item("14 soni va qo'shish, ayirish",R.drawable.a14)
+        list=list+ Item("15 soni va qo'shish, ayirish",R.drawable.a15)
+        list=list+ Item("16 soni va qo'shish, ayirish",R.drawable.a16)
+        list=list+ Item("17 soni va qo'shish, ayirish",R.drawable.a17)
+        list=list+ Item("18 soni va qo'shish, ayirish",R.drawable.a18)
+        list=list+ Item("19 soni va qo'shish, ayirish",R.drawable.a19)
+        list=list+ Item("20 soni va qo'shish, ayirish",R.drawable.a20)
+        list=list+ Item("Vaqt birligi",R.drawable.a7)
+        list=list+ Item("Hafta kunlari",R.drawable.a8)
+        list=list+ Item("Og'irlik o'lchovi",R.drawable.abd)
+        list=list+ Item("Geometrik shakllar",R.drawable.a21)
+        list=list+ Item("Geometrik burchaklar",R.drawable.aaa2)
+        list=list+ Item("Uzunlik o'lchovi",R.drawable.a22)
+        list=list+ Item("Qo'shib ayirishni takrorlash",R.drawable.a)
 
-        val adapter=Adapter(list=list,this@PlayActivity)
+        val adapter= Adapter(list=list,this@PlayActivity)
         binding.grid.adapter=adapter
 
         binding.grid.onItemClickListener=AdapterView.OnItemClickListener { _: AdapterView<*>, _: View, i: Int, _: Long ->

@@ -1,10 +1,10 @@
-package com.example.matematika_2
+package com.math.matematika_2
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
-import com.example.matematika_2.databinding.ActivityMainBinding
+import com.math.matematika_2.databinding.ActivityMainBinding
 
 @Suppress("DEPRECATION")
 class MainActivity : AppCompatActivity() {
@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
 
         binding.button.setOnClickListener {
-            startActivity(Intent(this,PlayActivity::class.java))
+            startActivity(Intent(this, PlayActivity::class.java))
         }
     }
 }

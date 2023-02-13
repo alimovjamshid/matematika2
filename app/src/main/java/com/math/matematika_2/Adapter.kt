@@ -1,4 +1,4 @@
-package com.example.matematika_2
+package com.math.matematika_2
 
 import android.annotation.SuppressLint
 import android.content.Context

@@ -4,15 +4,15 @@ plugins {
 }
 
 android {
-    namespace 'com.example.matematika_2'
+    namespace 'com.math.matematika_2'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.matematika_2"
+        applicationId "com.math.matematika_2"
         minSdk 21
         targetSdk 33
-        versionCode 1
-        versionName "1.0"
+        versionCode 14
+        versionName "2.4.3"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildFeatures{
@@ -33,6 +33,13 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
+    }
+
+    dependencies {
+        compileOnly "com.android.tools.lint:lint-api:30.4.1"
+        testImplementation "com.android.tools.lint:lint:30.4.1"
+        testImplementation "com.android.tools.lint:lint-tests:30.4.1"
+        testImplementation "junit:junit:4.13.2"
     }
 }
 
