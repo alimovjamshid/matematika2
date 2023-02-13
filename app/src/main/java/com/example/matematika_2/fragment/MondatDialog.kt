@@ -1,5 +1,6 @@
 package com.example.matematika_2.fragment
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -12,6 +13,7 @@ import com.example.matematika_2.databinding.MondatBinding
 
 class MondatDialog:DialogFragment() {
     private lateinit var binding:MondatBinding
+    @SuppressLint("SetTextI18n")
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -23,7 +25,7 @@ class MondatDialog:DialogFragment() {
         val t:Int=bundle?.getInt("t") as Int
         val f:Int=bundle.getInt("f")
 
-        binding.notogri.text="Noto'g'ri : "+f.toString()
+        binding.notogri.text= "Noto'g'ri : $f"
         binding.togri.text="To'g'ri : "+t.toString()
         binding.clear.setOnClickListener {
             startActivity(Intent(context,PlayActivity::class.java))

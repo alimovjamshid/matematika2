@@ -11,6 +11,7 @@ import com.example.matematika_2.databinding.FragmentLengthBinding
 import com.example.matematika_2.dialog.RightDialog
 import com.example.matematika_2.dialog.WrongDialog
 
+@Suppress("DEPRECATION")
 class LengthFragment:DialogFragment() {
     private var BgMusic: MediaPlayer? = null
     private lateinit var binding:FragmentLengthBinding
@@ -30,9 +31,9 @@ class LengthFragment:DialogFragment() {
 
         val bundle=this.arguments
         val question:ArrayList<String> = bundle?.getStringArrayList("question") as ArrayList<String>
-        val image:ArrayList<Int> = bundle?.getIntegerArrayList("image") as ArrayList<Int>
-        val answer:ArrayList<String> =bundle?.getStringArrayList("answer") as ArrayList<String>
-        val sound:ArrayList<Int> =bundle?.getIntegerArrayList("sound") as ArrayList<Int>
+        val image:ArrayList<Int> = bundle.getIntegerArrayList("image") as ArrayList<Int>
+        val answer:ArrayList<String> = bundle.getStringArrayList("answer") as ArrayList<String>
+        val sound:ArrayList<Int> = bundle.getIntegerArrayList("sound") as ArrayList<Int>
 
         binding.txt.text=question[0]
         binding.img.setImageResource(image[0])

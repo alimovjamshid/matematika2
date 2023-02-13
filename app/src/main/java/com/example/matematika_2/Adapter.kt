@@ -1,5 +1,6 @@
 package com.example.matematika_2
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
@@ -9,6 +10,7 @@ import android.widget.TextView
 import de.hdodenhof.circleimageview.CircleImageView
 
 
+@Suppress("NAME_SHADOWING")
 class Adapter(
     private  val list: List<Item>,
     private  val context: Context
@@ -30,6 +32,7 @@ class Adapter(
         return 0
     }
 
+    @SuppressLint("InflateParams")
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
         var convertView=convertView
 
@@ -45,7 +48,7 @@ class Adapter(
         }
 
         image=convertView!!.findViewById(R.id.circle_img)
-        text=convertView!!.findViewById(R.id.grid_name)
+        text= convertView.findViewById(R.id.grid_name)
 
         image.setImageResource(list.get(position).image!!.toInt())
         text.setText(list.get(position).name)

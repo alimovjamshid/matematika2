@@ -12,6 +12,7 @@ import com.example.matematika_2.databinding.FragmenrTwoBinding
 import com.example.matematika_2.dialog.RightDialog
 import com.example.matematika_2.dialog.WrongDialog
 
+@Suppress("DEPRECATION")
 class TwoFragment:Fragment() {
     private var BgMusic: MediaPlayer? = null
     private lateinit var binding:FragmenrTwoBinding
@@ -31,9 +32,9 @@ class TwoFragment:Fragment() {
 
         val bundle=this.arguments
         val question:ArrayList<String> = bundle?.getStringArrayList("question") as ArrayList<String>
-        val answer:ArrayList<String> =bundle?.getStringArrayList("answer") as ArrayList<String>
-        val baa:ArrayList<String> =bundle?.getStringArrayList("baa") as ArrayList<String>
-        val sound:ArrayList<Int> =bundle?.getIntegerArrayList("sound") as ArrayList<Int>
+        val answer:ArrayList<String> = bundle.getStringArrayList("answer") as ArrayList<String>
+        val baa:ArrayList<String> = bundle.getStringArrayList("baa") as ArrayList<String>
+        val sound:ArrayList<Int> = bundle.getIntegerArrayList("sound") as ArrayList<Int>
         binding.question2.text=question[i]
         binding.answer21.text=answer[i]
         binding.answer22.text=baa[i]

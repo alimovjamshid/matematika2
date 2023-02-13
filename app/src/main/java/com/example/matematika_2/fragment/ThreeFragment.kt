@@ -12,6 +12,7 @@ import com.example.matematika_2.databinding.FragmenrThreeBinding
 import com.example.matematika_2.dialog.RightDialog
 import com.example.matematika_2.dialog.WrongDialog
 
+@Suppress("DEPRECATION")
 class ThreeFragment:Fragment() {
     private var BgMusic: MediaPlayer? = null
     private lateinit var binding:FragmenrThreeBinding
@@ -19,7 +20,7 @@ class ThreeFragment:Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding=FragmenrThreeBinding.inflate(inflater)
 
         val rightDialog = RightDialog()
@@ -27,12 +28,12 @@ class ThreeFragment:Fragment() {
 
         val bundle=this.arguments
         val question:ArrayList<String> = bundle?.getStringArrayList("question") as ArrayList<String>
-        val answer:ArrayList<String> =bundle?.getStringArrayList("answer") as ArrayList<String>
-        val baa:ArrayList<String> =bundle?.getStringArrayList("baa") as ArrayList<String>
-        val sound:ArrayList<Int> =bundle?.getIntegerArrayList("sound") as ArrayList<Int>
-        var i:Int= bundle?.getInt("i") as Int
-        var t:Int=bundle?.getInt("t") as Int
-        var f:Int=bundle?.getInt("f") as Int
+        val answer:ArrayList<String> = bundle.getStringArrayList("answer") as ArrayList<String>
+        val baa:ArrayList<String> = bundle.getStringArrayList("baa") as ArrayList<String>
+        val sound:ArrayList<Int> = bundle.getIntegerArrayList("sound") as ArrayList<Int>
+        var i:Int= bundle.getInt("i")
+        var t:Int= bundle.getInt("t")
+        var f:Int= bundle.getInt("f")
 
         val mfragment=FourFragment()
         val mbundle=Bundle()

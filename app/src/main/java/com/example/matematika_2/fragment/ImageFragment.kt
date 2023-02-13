@@ -5,13 +5,13 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.DialogFragment
 import com.example.matematika_2.R
 import com.example.matematika_2.databinding.FragmentImageBinding
 import com.example.matematika_2.dialog.RightDialog
 import com.example.matematika_2.dialog.WrongDialog
 
+@Suppress("DEPRECATION")
 class ImageFragment:DialogFragment() {
     private var BgMusic: MediaPlayer? = null
     private lateinit var binding:FragmentImageBinding
@@ -19,7 +19,7 @@ class ImageFragment:DialogFragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding=FragmentImageBinding.inflate(inflater)
 
         var t=0
@@ -31,8 +31,8 @@ class ImageFragment:DialogFragment() {
 
         val bundle=this.arguments
         val question:ArrayList<String> = bundle?.getStringArrayList("question") as ArrayList<String>
-        val image:ArrayList<Int> = bundle?.getIntegerArrayList("image") as ArrayList<Int>
-        val sound:ArrayList<Int> =bundle?.getIntegerArrayList("sound") as ArrayList<Int>
+        val image:ArrayList<Int> = bundle.getIntegerArrayList("image") as ArrayList<Int>
+        val sound:ArrayList<Int> = bundle.getIntegerArrayList("sound") as ArrayList<Int>
 
         binding.answer.text=question[0]
         binding.ikki1.setImageResource(image[0])

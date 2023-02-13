@@ -11,6 +11,7 @@ import com.example.matematika_2.databinding.FragmentDaysBinding
 import com.example.matematika_2.dialog.RightDialog
 import com.example.matematika_2.dialog.WrongDialog
 
+@Suppress("DEPRECATION")
 class DaysFragment:DialogFragment() {
     private var BgMusic: MediaPlayer? = null
     private lateinit var binding:FragmentDaysBinding
@@ -18,7 +19,7 @@ class DaysFragment:DialogFragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding=FragmentDaysBinding.inflate(inflater)
 
         var t=0
@@ -30,8 +31,8 @@ class DaysFragment:DialogFragment() {
 
         val bundle=this.arguments
         val question:ArrayList<String> = bundle?.getStringArrayList("question") as ArrayList<String>
-        val answer:ArrayList<String> = bundle?.getStringArrayList("answer") as ArrayList<String>
-        val sound:ArrayList<Int> =bundle?.getIntegerArrayList("sound") as ArrayList<Int>
+        val answer:ArrayList<String> = bundle.getStringArrayList("answer") as ArrayList<String>
+        val sound:ArrayList<Int> = bundle.getIntegerArrayList("sound") as ArrayList<Int>
 
         binding.question2.text=question[0]
 

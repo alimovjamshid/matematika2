@@ -6,12 +6,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.DialogFragment
-import com.example.matematika_2.PlayActivity
 import com.example.matematika_2.R
 import com.example.matematika_2.databinding.FragmentFourBinding
 import com.example.matematika_2.dialog.RightDialog
 import com.example.matematika_2.dialog.WrongDialog
 
+@Suppress("DEPRECATION")
 class FourFragment:DialogFragment() {
     private var BgMusic: MediaPlayer? = null
     private lateinit var binding: FragmentFourBinding
@@ -27,12 +27,12 @@ class FourFragment:DialogFragment() {
 
         val bundle=this.arguments
         val question:ArrayList<String> = bundle?.getStringArrayList("question") as ArrayList<String>
-        val answer:ArrayList<String> =bundle?.getStringArrayList("answer") as ArrayList<String>
-        val baa:ArrayList<String> =bundle?.getStringArrayList("baa") as ArrayList<String>
-        val sound:ArrayList<Int> =bundle?.getIntegerArrayList("sound") as ArrayList<Int>
-        var i:Int= bundle?.getInt("i") as Int
-        var t:Int=bundle?.getInt("t") as Int
-        var f:Int=bundle?.getInt("f") as Int
+        val answer:ArrayList<String> = bundle.getStringArrayList("answer") as ArrayList<String>
+        val baa:ArrayList<String> = bundle.getStringArrayList("baa") as ArrayList<String>
+        val sound:ArrayList<Int> = bundle.getIntegerArrayList("sound") as ArrayList<Int>
+        var i:Int= bundle.getInt("i")
+        var t:Int= bundle.getInt("t")
+        var f:Int= bundle.getInt("f")
 
         binding.question4.text=question[i]
         binding.answer41.text=answer[i]

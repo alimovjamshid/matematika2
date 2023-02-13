@@ -1,11 +1,10 @@
 package com.example.matematika_2
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
-import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.example.matematika_2.databinding.ActivityPlayBinding
 
 open class PlayActivity : AppCompatActivity() {
@@ -24,7 +23,7 @@ open class PlayActivity : AppCompatActivity() {
         binding= ActivityPlayBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        list=ArrayList<Item>()
+        list= arrayListOf()
         list=list+Item("1 dan 10 gacha sonlarni taqqoslash",R.drawable.a4)
         list=list+Item("1 dan 10 gacha qo‘shni sonlarni aniqlash",R.drawable.img)
         list=list+Item("1 dan 5 gacha sonlarni qo'shish va ayirish",R.drawable.a1)
@@ -50,7 +49,7 @@ open class PlayActivity : AppCompatActivity() {
         val adapter=Adapter(list=list,this@PlayActivity)
         binding.grid.adapter=adapter
 
-        binding.grid.onItemClickListener=AdapterView.OnItemClickListener { adapterView: AdapterView<*>, view2: View, i: Int, l: Long ->
+        binding.grid.onItemClickListener=AdapterView.OnItemClickListener { _: AdapterView<*>, _: View, i: Int, _: Long ->
             j = i
             when (i) {
                 0 -> {
